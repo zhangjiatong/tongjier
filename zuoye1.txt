@@ -1,0 +1,31 @@
+zuoye--gwc1
+
+1.show databases;
+2.use hello;
+3.create table gwc1( id int primary key not null auto_increment, fovorite varchar(45), discount varchar(45), wish varchar(45));
+4.desc gwc1;
+5.insert into gwc1(id,fovorite,discount,wish) value (1,"computer","8.5","have a car");
+6.insert into gwc1(fovorite,discount,wish) values
+    -> ("phone","7.5","have a house"),
+    -> ("clothes","8.0","have a robot");
+7.select*from gwc1;
+8.update gwc1 set wish="have a jewel" where id=3;
+9.select*from gwc1;
+10.delete from gwc1 where id=3;
+11.select*from gwc1;
+
+
+zuoye--qvhe
+1.show databases;
+2. use hello;
+3. source /home/huwang/Desktop/hr.sql
+4.show tables;
+5.select*from emp;
+6.select sal from emp where sal>1800;
+7. select*from emp order by deptno desc;
+8.select count(sal)from emp;
+9.select sal,count(sal) from emp group by sal;
+10.select sal,deptno from emp where deptno=10;
+11.select*from emp,dept where emp.deptno=dept.deptno;
+12.select dept.deptno,emp.deptno from emp right join dept on dept.deptno=emp.deptno;
+
