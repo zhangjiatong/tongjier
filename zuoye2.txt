@@ -1,0 +1,41 @@
+<<film>>
+1.show databases;
+2.use hello;
+3.create table film(
+id int primary key not null auto_inncrement,
+name varchar(45),
+year int,
+director varchar(45),
+grade int);
+4.insert into film(name,year,director,grade) values
+("qwe",1999,"rty",9.1),("asd",2004,"uio",9.3),("zxc",2008,"ghj",9.6),("jkl",2014,"bnm",9.8);
+5.select*from film;
+6.select*from film name like“％a％”;
+7.select * from film where year=2008;
+8.select * from film where grade> =9;
+
+<<Talent>>
+1.show databases;
+2.use hello;
+3.create table user(id,int primary key not null auto_increment,
+name varchar(45),
+method varchar(10),
+logintime datetime);
+4.insert into user(name,method,logintime) values
+("liu","app",2018-10-10 10:52:53),("hu","pc",2018-10-11 10:54:34),("ku","ipad",2018-10-12 10:55:59),("pi","pc",2018-10-13 10:56:08);
+5.select case
+    -> when abs(datediff(logintime,now()))>30 then "go to hell"
+    -> when abs(datediff(logintime,now()))>9  then "will you be back"
+    -> when abs(datediff(logintime,now()))>7  then "genius,come back here"
+    -> end from user;
+
+<<shoucangjia>>
+1.show databases;
+2.use hello;
+3.create table shoucangjia(id,int primary key not null auto_increment,
+name varchar(45),
+zengjia varchar(10),
+qvxiao varchar(10));
+
+
+
